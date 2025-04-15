@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Edit, Trash2, Plus } from "lucide-react";
 import { useFinance } from "@/context/FinanceContext";
@@ -222,8 +221,7 @@ export const BudgetList: React.FC = () => {
                           <div className="flex flex-col gap-1">
                             <Progress
                               value={percentage}
-                              className="h-2"
-                              indicatorClassName={status.color}
+                              className={`h-2 ${status.color}`}
                             />
                             <div className="flex justify-between text-xs text-muted-foreground">
                               <span>{percentage}%</span>
