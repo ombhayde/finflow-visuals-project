@@ -1,73 +1,115 @@
-# Welcome to your Lovable project
 
-## Project info
+# Personal Finance Tracker
 
-**URL**: https://lovable.dev/projects/2938b3d2-40ee-47c8-84e0-4eeb09061740
+A comprehensive personal finance management application that helps you track expenses, manage budgets, and visualize your financial data.
 
-## How can I edit this code?
+![Personal Finance Tracker](https://github.com/your-username/personal-finance-tracker/raw/main/public/app-screenshot.png)
 
-There are several ways of editing your application.
+## Features
 
-**Use Lovable**
+- **Transaction Management**: Add, edit, and delete financial transactions
+- **Category Management**: Organize transactions with customizable categories
+- **Budget Planning**: Set and track monthly budgets by category
+- **Visual Analytics**: Multiple charts to visualize your financial data
+- **Responsive Design**: Works on mobile, tablet, and desktop devices
+- **Indian Rupee (₹) Support**: All financial data displayed in INR format
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/2938b3d2-40ee-47c8-84e0-4eeb09061740) and start prompting.
+## Live Demo
 
-Changes made via Lovable will be committed automatically to this repo.
+Visit the live application at: [https://finance-tracker.lovable.app](https://finance-tracker.lovable.app)
 
-**Use your preferred IDE**
+## Installation and Setup
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Prerequisites
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Node.js (v16 or higher)
+- npm or yarn package manager
 
-Follow these steps:
+### Step 1: Clone the Repository
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+```bash
+git clone https://github.com/your-username/personal-finance-tracker.git
+cd personal-finance-tracker
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Step 2: Install Dependencies
 
-# Step 3: Install the necessary dependencies.
-npm i
+Using npm:
+```bash
+npm install
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Or using yarn:
+```bash
+yarn install
+```
+
+### Step 3: Start the Development Server
+
+Using npm:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Or using yarn:
+```bash
+yarn dev
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+The application will be available at http://localhost:5173
 
-**Use GitHub Codespaces**
+### Step 4: Building for Production
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Using npm:
+```bash
+npm run build
+```
 
-## What technologies are used for this project?
+Or using yarn:
+```bash
+yarn build
+```
 
-This project is built with:
+The production-ready files will be generated in the `dist` directory.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Project Structure
 
-## How can I deploy this project?
+```
+/src
+  /components
+    /budgets      # Budget-related components
+    /categories   # Category management components
+    /dashboard    # Dashboard and analytics components
+    /layout       # Layout components
+    /transactions # Transaction management components
+    /ui           # UI components from shadcn/ui
+  /context       # React context providers
+  /data          # Mock data and data utilities
+  /hooks         # Custom React hooks
+  /pages         # Page components
+  /types         # TypeScript type definitions
+  /utils         # Utility functions
+```
 
-Simply open [Lovable](https://lovable.dev/projects/2938b3d2-40ee-47c8-84e0-4eeb09061740) and click on Share -> Publish.
+## Technology Stack
 
-## Can I connect a custom domain to my Lovable project?
+- **React** - Frontend library
+- **Vite** - Build tool
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Styling
+- **shadcn/ui** - UI component library
+- **Recharts** - Data visualization
+- **React Router** - Navigation
+- **date-fns** - Date manipulation
 
-Yes, you can!
+## Contributing
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
